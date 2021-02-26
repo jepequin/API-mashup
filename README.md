@@ -8,7 +8,7 @@ An API mashup is an application that orchestrates multiple resources and methods
 
 In this assignment we mash up data from two different APIs in order to make movie recommendations. The TasteDive API allows us to feed a movie (or bands, TV shows, etc.) as a query input, and returns a set of related items. The OMDB API accepts movie titles as a query input and sends back data about the movie, including scores from various review sites (Rotten Tomatoes, IMDB, etc.).
 
-Our program starts by asking the user to input (one by one) the names of the movies she wants to get recommendations for, as well as a OMBD apikey. It then proceeds to use TasteDive to get related movies for each title, and queries the OMDB API to get the Rotten Tomatoes scores for each of the recommended movies. Finally it sorts the recommendations according to their score and dumps the data to a csv (using as row header the movies the user wants recommendations for). 
+Our program starts by asking the user to input (one by one) the names of the movies she wants to get recommendations for, as well as a OMBD apikey. It then proceeds to use TasteDive to get related movies for each title, and queries the OMDB API to get the Rotten Tomatoes scores for each of the recommended movies. Finally it sorts the recommendations according to their score and dumps the data to a csv (using as row header the movies the user wants recommendations for, and showing the score between parenthesis). 
 
 It is worth mentioning that our code handles extreme cases. For instance:
 
